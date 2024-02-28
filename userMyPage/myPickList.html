@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이 페이지</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
-
 <body>
     <!-- 헤더 -->
     <header class="w-100 bg-white">
@@ -27,7 +24,8 @@
                 <div class="d-flex justify-content-start">
                     <form action="#" class="d-flex justify-content-center">
                         <input type="search" class="form-control border-0" placeholder="통합 검색">
-                        <button onclick="location.href='../index/index.html'" class="btn btn-outline-success border-0 text-black" type="submit">
+                        <button onclick="location.href='../index/index.html'"
+                            class="btn btn-outline-success border-0 text-black" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
@@ -58,63 +56,58 @@
             </div>
         </nav>
     </header>
+    
+    <main class="box">
+        <div class="box_ui bg-light" style="padding: 30px 200px;">
+            <div class="ui_content d-flex justify-content-center">
+                <div class="content_list" style="width: calc(100% - 300px);">
+                    <!-- 지원 현황 -->
+                    <div id="list_user_modify"
+                        class="list_item d-flex justify-content-center flex-column w-100 bg-white rounded-3"
+                        style="margin-right: 20px; padding: 20px;">
+                        <div class="item_resume">
+                            <span class="resume_correction h5 fw-bold">지원 현황</span>
+                            <div class="correction_list p-3 d-flex pt-0 border-top pt-3 mt-3">
+                                <form action="#" class="w-100">
 
-    <!-- boardDetail -->
-    <section style="padding: 20px; background-color: #f8f9fa; padding: 30px 200px;">
-        <div class="container bg-white p-3 rounded-3">
-            <header class="board_title">
-                <h1><strong>커뮤니티 게시판</strong></h1>
-                <p>여러분의 의견을 자유롭게 작성해 주세요!</p>
-            </header>
-            <div class="board_view_wrap">
-                <div class="board_view">
-                    <div class="title"
-                        style="padding: 20px 15px; border-top: 2px solid; border-bottom: 1px dashed #ddd; font-size: 2rem;">
-                        안녕하세요.
-                    </div>
-                    <div class="info d-flex justify-content-between"
-                        style="padding: 15px; border-bottom: 1px solid #999; font-size: 18px;">
-                        <dl class="">
-                            <dl style="display: inline-block; margin-left: 50px; margin-right: 150px;">
-                                <dt>번호</dt>
-                                <dd>1</dd>
-                                <dt>글쓴이</dt>
-                                <dd>김**</dd>
-                            </dl>
-                            <dl
-                                style="display: inline-block; margin-left: 200px; margin-right: 150px; margin-bottom: -10px;">
-                                <dt>조회수</dt>
-                                <dd>185</dd>
-                                <dt>작성일</dt>
-                                <dd>2024.2.20</dd>
-                            </dl>
-
-                        </dl>
-                    </div>
-                    <div class="content"
-                        style="padding: 15px;border-bottom: 1px solid #000;line-height: 160%;font-size: 20px;">
-                        안녕하세요.<br>
-                        처음 인사 드립니다.<br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-
-                    </div>
-                    <div class="bt_wrap" style="text-align: center; margin-top: 15px;">
-                        <a href="boardList2.html" class="on"
-                            style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border: none; margin-right: 10px;">목록</a>
-                        <a href="boardUpdate.html" class="on"
-                            style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border: none;">수정</a>
+                                    <div class="card mb-3">
+                                        <div class="card-body d-flex justify-content-between text-secondary m-2">
+                                            <div>
+                                                <p class="mb-0"><small>엠디비(MDB)</small></p>
+                                                <p class="card-title mb-0"><strong>React(Next.js) 프론트 엔드 웹 개발자 - 팀장</strong></p>
+                                                <p class="card-text mb-0"><small>4,000 - 5,600만원 / 경력</small></p>
+                                                <p class="card-text"><small> 03/31 마감 02/27 수정</small></p>
+                                            </div>
+                                            <div class="row">
+                                                <button type="button" class="btn btn-outline-secondary mb-1">상세보기</button>
+                                                <button onclick="" type="button" class="btn btn-outline-secondary mb-1">수정</button>
+                                                <button type="button" class="btn btn-outline-secondary">삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- 사이드바 -->
+                <div class="content_sidebar d-flex flex-column bg-white rounded-3 h-100"
+                    style="width: 300px;margin: 0px 20px;padding: 20px;">
+                    <span class="h5 fw-bold pb-2">내 목록</span>
+                    <form class="sidebar_box d-flex flex-column mb-3" action="#">
+                        <a href="../userMyPage/updateForm.html"
+                            class="sidebar_link text-black text-decoration-none pb-3">회원 정보 수정</a>
+                        <a href="../resume/create_resume.html" class="sidebar_link text-black text-decoration-none pb-3">이력서 작성</a>
+                        <a href="#" class="sidebar_link text-black text-decoration-none pb-3">스크랩</a>
+                        <a href="../userMyPage/myPickList.html" class="sidebar_link text-black text-decoration-none pb-3">지원 현황</a>
+                        <a href="../index/index.html" class="sidebar_link text-black text-decoration-none">회원탈퇴</a>
+                    </form>
+                </div>
             </div>
-    </section>
-
-
-    <!-- footer -->
+        </div>
+    </main>
+    <!-- 푸터 -->
     <footer style="padding: 30px 200px;">
         <div class="border-top border-top-0">
             <span class="h4">Created by Team 3</span>
@@ -129,11 +122,10 @@
             </div>
             <hr>
             <div class="d-flex flex-column">
-                <span class="lh-lg">☎ 010-2222-7777</span>
+                <span class="lh-lg">:전화기2: 010-2222-7777</span>
                 <span class="fw-bold">© 2023. Alicorn, Inc. all rights reserved.</span>
             </div>
         </div>
     </footer>
 </body>
-
 </html>

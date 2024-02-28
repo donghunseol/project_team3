@@ -18,6 +18,47 @@
 </head>
 
 <body>
+    <!-- 헤더 -->
+    <header class="w-100 bg-white">
+        <nav class="navbar navbar-expand-sm bg-withe navbar-withe border-bottom d-flex justify-content-between pb-3 pt-3"
+            style="padding: 30px 150px;">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand" href="../index/index.html">LOGO</a>
+                <div class="d-flex justify-content-start">
+                    <form action="#" class="d-flex justify-content-center">
+                        <input type="search" class="form-control border-0" placeholder="통합 검색">
+                        <button onclick="location.href='../index/index.html'" class="btn btn-outline-success border-0 text-black" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../user/joinForm.html">회원가입</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../user/loginForm.html">로그인</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index/index.html">로그아웃</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userMyPage/myPageIndex.html">마이페이지</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../board/boardList1.html">게시판</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div class="mw-100 bg-light" style="padding: 30px 150px;">
         <div class="container">
             <h3 class="container d-flex pb-3">이력서 작성</h3>
@@ -182,11 +223,31 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-center mt-3">
-                <button type="button" class="btn btn-secondary">작성완료</button>
-                <button type="button" class="btn btn-outline-secondary">취소</button>
+                <button onclick="location.href='#'" type="button" class="btn btn-secondary">작성완료</button>
+                <button onclick="location.href='../userMyPage/myPageIndex.html'" type="button" class="btn btn-outline-secondary">취소</button>
             </div>
         </div>
     </div>
+
+    <footer style="padding: 30px 200px;">
+        <div class="border-top border-top-0">
+            <span class="h4">Created by Team 3</span>
+            <hr>
+            <div class="d-flex lh-lg">
+                <a href="#" class="text-black text-decoration-none pe-3">회사소개</a>
+                <a href="#" class="text-black text-decoration-none pe-3">고객센터</a>
+                <a href="#" class="text-black text-decoration-none pe-3">오시는길</a>
+                <a href="#" class="text-black text-decoration-none pe-3">서비스 소개</a>
+                <a href="#" class="text-black text-decoration-none pe-3">서비스 약관</a>
+                <a href="#" class="text-black text-decoration-none pe-3">도움말</a>
+            </div>
+            <hr>
+            <div class="d-flex flex-column">
+                <span class="lh-lg">☎ 010-2222-7777</span>
+                <span class="fw-bold">© 2023. Alicorn, Inc. all rights reserved.</span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
