@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <header class="w-100 bg-white">
+    <!-- 헤더 -->
+    <header class="top-0 position-fixed w-100 bg-white">
         <nav class="navbar navbar-expand-sm bg-withe navbar-withe border-bottom d-flex justify-content-between pb-3 pt-3"
             style="padding: 30px 150px;">
             <div class="container-fluid mx-5">
@@ -38,19 +39,19 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">회원가입</a>
+                            <a class="nav-link" href="../user/joinForm.html">회원가입</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/user/loginForm.html">로그인</a>
+                            <a class="nav-link" href="../user/loginForm.html">로그인</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">로그아웃</a>
+                            <a class="nav-link" href="../index/index.html">로그아웃</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">마이페이지</a>
+                            <a class="nav-link" href="../userMyPage/myPageIndex.html">마이페이지</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">게시판</a>
+                            <a class="nav-link" href="../board/boardList1.html">게시판</a>
                         </li>
                     </ul>
                 </div>
@@ -58,13 +59,13 @@
         </nav>
     </header>
 
-    <div class="mw-100 bg-light d-flex justify-content-center" style="padding: 30px 150px;">
+    <div class="mw-100 bg-light d-flex justify-content-center" style="padding: 30px 150px; margin-top: 73px;">
         <div class="container bg-white rounded-3 border border-white pt-3" style="margin: 0px 60px;">
             <h3>회원가입</h3>
 
             <div class="btn-group">
-                <button type="button" class="btn btn-primary">개인회원</button>
-                <button type="button" class="btn btn-primary">기업회원</button>
+                <button onclick="location.href='../user/joinForm.html'"  type="button" class="btn btn-primary">개인회원</button>
+                <button onclick="location.href='../company/joinForm.html'" type="button" class="btn btn-primary">기업회원</button>
             </div>
 
             <form action="/action_page.php" class="was-validated">
