@@ -23,11 +23,13 @@
         <nav class="navbar navbar-expand-sm bg-withe navbar-withe border-bottom d-flex justify-content-between pb-3 pt-3"
             style="padding: 30px 150px;">
             <div class="container-fluid mx-5">
-                <a class="navbar-brand" href="../index/index.html">LOGO</a>
+                <a class="navbar-brand" href="../index/index.html">
+                    <img src="../img/shine_logo.png" style="height: 60px; width: 150px;">
+                </a>
                 <div class="d-flex justify-content-start">
-                    <form action="#" class="d-flex justify-content-center">
+                    <form action="../index/index.html" class="d-flex justify-content-center">
                         <input type="search" class="form-control border-0" placeholder="통합 검색">
-                        <button onclick="location.href='../index/index.html'" class="btn btn-outline-success border-0 text-black" type="submit">
+                        <button class="btn btn-outline-success border-0 text-black" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
@@ -62,18 +64,20 @@
     <div class="mx-100 bg-light d-flex justify-content-center" style="padding: 30px 150px;">
         <div class="container bg-white rounded-3 border border-white p-3" style="margin: 0px 60px;">
             <h2>로그인</h2>
-    
+
             <div class="btn-group">
-                <button onclick="location.href='../user/loginForm.html'" type="button" class="btn btn-primary">개인회원</button>
-                <button onclick="location.href='../company/loginForm.html'" type="button" class="btn btn-primary">기업회원</button>
+                <button onclick="location.href='../user/loginForm.html'" type="button"
+                    class="btn btn-primary">개인회원</button>
+                <button onclick="location.href='../user/loginForm.html'" type="button"
+                    class="btn btn-primary">기업회원</button>
             </div>
-    
-            <form action="/action_page.php">
+
+            <form action="../index/index.html">
                 <div class="mb-3 mt-3">
                     <label for="email">userid:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter userid" name="userId">
                 </div>
-    
+
                 <div class="mb-3">
                     <label for="pwd">Password:</label>
                     <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
@@ -83,11 +87,12 @@
                         <input class="form-check-input" type="checkbox" name="remember"> Remember me
                     </label>
                 </div>
-                <button onclick="location.href='../index/index.html'"  type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit"
+                    class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
-    
+
     <footer style="padding: 30px 200px;">
         <div class="border-top border-top-0">
             <span class="h4">Created by Team 3</span>
